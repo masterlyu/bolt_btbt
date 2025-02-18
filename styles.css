@@ -1,58 +1,204 @@
 /* styles.css */
-body {
-  font-family: Arial, sans-serif;
+
+/* Reset 및 기본 스타일 */
+body, h1, h2, h3, h4, p, ul, li {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* 밝은 회색 배경 */
+  color: #333; /* 기본 텍스트 색상 */
+  line-height: 1.5;
+}
+
+/* Header 스타일 */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #333; /* 어두운 회색 배경 */
+  color: #fff; /* 헤더 텍스트 색상 */
   padding: 1em 0;
-  text-align: center;
 }
 
-header h1 {
-  margin: 0;
+.header-container {
+  display: flex;
+  justify-content: space-between; /* 로고와 네비게이션 양쪽 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  max-width: 1200px; /* 최대 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  padding: 0 20px; /* 좌우 패딩 */
+}
+
+.logo h1 {
+  font-size: 1.8em; /* 로고 폰트 크기 */
 }
 
 nav ul {
-  padding: 0;
-  list-style: none;
+  list-style: none; /* 목록 스타일 제거 */
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 1em;
+  display: inline; /* 가로로 메뉴 나열 */
+  margin-left: 2em; /* 메뉴 간 간격 */
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* 첫 번째 메뉴 왼쪽 간격 제거 */
 }
 
 nav ul li a {
-  color: #fff;
-  text-decoration: none;
+  color: #fff; /* 메뉴 링크 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+  padding: 0.5em 1em; /* 링크 패딩 */
 }
 
+nav ul li a:hover {
+  border-bottom: 2px solid #fff; /* 호버 시 밑줄 */
+}
+
+/* Main 스타일 */
 main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 60px 0; /* 섹션 상하 패딩 */
+}
+
+.content-container {
+  text-align: center; /* 내용 가운데 정렬 */
   padding: 20px;
 }
 
 #hero {
-  background-color: #e0e0e0;
-  padding: 50px;
+  background-color: #e0e0e0; /* 연한 회색 배경 */
+  text-align: center;
+  padding: 100px 0; /* hero 섹션 패딩 */
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#hero h2 {
+  font-size: 2.5em; /* hero 제목 크기 */
+  margin-bottom: 20px;
+}
+
+#hero p {
+  font-size: 1.2em; /* hero 설명 크기 */
+  color: #555;
+}
+
+/* 소개 섹션 스타일 */
+#about, #solutions, #news, #contact {
+  background-color: #fff; /* 흰색 배경 */
+}
+
+#about h3, #solutions h3, #news h3, #contact h3 {
+  font-size: 2em; /* 섹션 제목 크기 */
+  margin-bottom: 30px;
+}
+
+.image-placeholder {
+  background-color: #ddd; /* 이미지 플레이스홀더 배경색 */
+  height: 200px; /* 플레이스홀더 높이 */
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+}
+
+/* 솔루션 섹션 스타일 */
+#solutions .solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 반응형 그리드 */
+  gap: 20px; /* 카드 간 간격 */
+  margin-top: 20px;
+}
+
+.solution-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   text-align: center;
 }
 
-#content {
-  padding: 20px;
+.solution-card img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 15px;
 }
 
+.solution-card h4 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* 뉴스 피드 스타일 */
+#news .news-feed ul {
+  list-style: none;
+  padding: 0;
+}
+
+#news .news-feed li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#news .news-feed li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#news .news-feed li a:hover {
+  background-color: #f9f9f9;
+}
+
+
+/* Footer 스타일 */
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #333; /* 어두운 회색 배경 */
+  color: #fff; /* 푸터 텍스트 색상 */
   text-align: center;
   padding: 1em 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  position: fixed; /* 푸터 위치 고정 */
+  bottom: 0; /* 화면 하단에 고정 */
+  width: 100%; /* 화면 너비 100% */
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* 모바일에서 세로로 배치 */
+    text-align: center; /* 가운데 정렬 */
+  }
+
+  nav ul li {
+    display: block; /* 모바일에서 블록 요소로 변경 */
+    margin: 0.5em 0; /* 상하 마진 */
+    margin-left: 0; /* 왼쪽 마진 제거 */
+  }
+
+  #hero {
+    padding: 80px 20px; /* 모바일 hero 섹션 패딩 조정 */
+  }
+
+  #hero h2 {
+    font-size: 2em; /* 모바일 hero 제목 크기 조정 */
+  }
+
+  /* 모바일 솔루션 그리드 스타일 */
+  #solutions .solutions-grid {
+    grid-template-columns: 1fr; /* 모바일에서는 한 열로 표시 */
+  }
 }

@@ -4,33 +4,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BTBT Homepage</title>
-  <link rel="stylesheet" href="./public/styles.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <header>
-    <h1>BTBT</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="header-container">
+      <div class="logo">
+        <h1>BTBT</h1>
+        <!-- 로고 이미지 또는 텍스트 -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#hero">홈</a></li>
+          <li><a href="#about">회사소개</a></li>
+          <li><a href="#solutions">솔루션</a></li>
+          <li><a href="#news">소식</a></li>
+          <li><a href="#contact">문의하기</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section id="hero">
-      <h2>Welcome to BTBT</h2>
-      <p>Your trusted partner for innovative solutions.</p>
-      <!-- GitHub 이미지 링크 사용 (개발/테스트 용도) -->
-      <!-- 실제 서비스 시에는 CDN 등 이미지 호스팅 서비스 이용 권장 -->
-      <img src="https://raw.githubusercontent.com/github/explore/main/topics/html/html-og.png" alt="BTBT 회사 이미지">
+      <div class="hero-content">
+        <h2>BTBT 자동화 솔루션으로 <br>더 효율적인 업무를</h2>
+        <p>혁신적인 솔루션으로 당신의 비즈니스를 성장시키세요.</p>
+        <!-- 메인 배너 문구 및 추가 정보 -->
+      </div>
     </section>
 
-    <section id="content">
-      <h3>Main Content Section</h3>
-      <p>This is the main content area of the homepage. You can add more sections and content here.</p>
+    <section id="about">
+      <div class="content-container">
+        <h3>회사소개</h3>
+        <p>BTBT는 다양한 산업 분야에 자동화 솔루션을 제공하는 혁신적인 기업입니다. 저희는 최첨단 기술과 전문 지식을 바탕으로 고객의 비즈니스 효율성을 극대화하는 맞춤형 솔루션을 제공합니다.</p>
+        <!-- 회사 소개 내용 -->
+        <div class="image-placeholder">
+          <!-- 회사 소개 이미지 -->
+        </div>
+      </div>
+    </section>
+
+    <section id="solutions">
+      <div class="content-container">
+        <h3>솔루션</h3>
+        <p>BTBT는 고객의 요구에 맞춘 다양한 솔루션을 제공합니다. 생산 자동화, 업무 프로세스 자동화, AI 기반 솔루션 등 다양한 분야에서 혁신적인 솔루션을 경험해보세요.</p>
+         <!-- 솔루션 소개 내용 -->
+        <div class="solutions-grid">
+          <!-- 솔루션 카드들이 여기에 추가될 예정입니다 -->
+        </div>
+      </div>
+    </section>
+
+    <section id="news">
+      <div class="content-container">
+        <h3>소식</h3>
+        <p>BTBT의 최신 뉴스와 업데이트를 만나보세요. 새로운 솔루션 출시, 업계 동향, 그리고 BTBT의 성장 소식을 빠르게 전달해드립니다.</p>
+        <!-- 소식 섹션 내용 -->
+        <div class="news-feed">
+          <!-- RSS 피드 내용이 여기에 추가될 예정입니다 -->
+        </div>
+        <div class="image-placeholder">
+          <!-- 최신 뉴스 이미지 -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="content-container">
+        <h3>문의하기</h3>
+        <p>BTBT에 대해 더 궁금하신 점이 있으신가요? 언제든지 문의해주세요. 저희 전문가 팀이 친절하게 상담해드립니다.</p>
+        <!-- 문의하기 내용 -->
+        <div class="image-placeholder">
+          <!-- 문의하기 이미지 -->
+        </div>
+      </div>
     </section>
   </main>
 
@@ -38,6 +86,6 @@
     <p>&copy; 2023 BTBT. All rights reserved.</p>
   </footer>
 
-  <script src="./public/script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

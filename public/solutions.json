@@ -1,0 +1,17 @@
+[
+  {
+    "name": "생산 자동화 솔루션",
+    "description": "제조 공정의 효율성과 생산성을 극대화하는 맞춤형 자동화 솔루션을 제공합니다.",
+    "icon": "images/solution1.png"
+  },
+  {
+    "name": "업무 프로세스 자동화",
+    "description": "반복적이고 비효율적인 업무 프로세스를 자동화하여 업무 효율을 향상시킵니다.",
+    "icon": "images/solution2.png"
+  },
+  {
+    "name": "AI 기반 솔루션",
+    "description": "AI 기술을 활용하여 데이터 분석, 예측, 의사결정 지원 등 다양한 분야에서 혁신적인 솔루션을 제공합니다.",
+    "icon": "images/solution3.png"
+  }
+]
