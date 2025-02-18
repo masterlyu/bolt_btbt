@@ -1,0 +1,67 @@
+/* header.css */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    position: sticky; /* 스크롤 시 헤더 고정 */
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+nav.pc-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav.pc-nav ul li {
+    margin-left: 25px;
+}
+
+nav.pc-nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav.pc-nav ul li a:hover {
+    color: #007bff; /* hover 시 색상 변경 */
+}
+
+.mobile-nav-button {
+    display: none; /* Initially hidden on PC */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .pc-nav {
+        display: none; /* Hide PC navigation on mobile */
+    }
+
+    .mobile-nav-button {
+        display: block; /* Show mobile navigation button */
+    }
+
+    .mobile-nav-button button {
+        background: none;
+        border: none;
+        font-size: 1em;
+        color: #333;
+        cursor: pointer;
+    }
+}

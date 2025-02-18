@@ -1,0 +1,51 @@
+/* components.css */
+
+/* Button Styles */
+.submit-button {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.submit-button:active {
+    transform: scale(1.0); /* Return to original size on click */
+}
+
+/* Mobile Navigation Button */
+.mobile-nav-button {
+    display: none; /* Initially hidden on larger screens */
+}
+
+.mobile-nav-button button {
+    background: none;
+    border: none;
+    color: #343a40; /* Adjust color as needed */
+    font-size: 1em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mobile-nav-button button i.menu-icon {
+    /* You can style an icon here if you have one */
+    /* Example: Font Awesome or custom icon */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent; /* Example icon style */
+    vertical-align: middle;
+    margin-right: 5px;
+    border: 1px solid #343a40;
+}
+
+
+/* 추가적인 컴포넌트 스타일 */

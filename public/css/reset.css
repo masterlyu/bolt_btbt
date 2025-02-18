@@ -1,0 +1,13 @@
+/* reset.css */
+/* Reset and Normalize styles will go here */
+/* Reset default browser styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Add more reset/normalize rules as needed */

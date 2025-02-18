@@ -1,0 +1,16 @@
+/* darkmode.css */
+/* Dark mode specific styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #222;
+    border-color: #555;
+}
+
+body.dark-mode nav ul li a {
+    color: #f4f4f4;
+}

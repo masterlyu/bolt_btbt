@@ -1,91 +1,104 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BTBT Homepage</title>
-  <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTBT - 자동화 솔루션</title>
+    <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 <body>
-  <header>
-    <div class="header-container">
-      <div class="logo">
-        <h1>BTBT</h1>
-        <!-- 로고 이미지 또는 텍스트 -->
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#hero">홈</a></li>
-          <li><a href="#about">회사소개</a></li>
-          <li><a href="#solutions">솔루션</a></li>
-          <li><a href="#news">소식</a></li>
-          <li><a href="#contact">문의하기</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">BTBT</a>
+            </div>
+            <nav class="pc-nav">
+                <ul>
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#about">회사소개</a></li>
+                    <li><a href="#solutions">솔루션</a></li>
+                    <li><a href="#news">소식</a></li>
+                    <li><a href="#contact">문의하기</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav-button">
+                <button>
+                    <i class="menu-icon"></i>
+                    Menu
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section id="hero">
-      <div class="hero-content">
-        <h2>BTBT 자동화 솔루션으로 <br>더 효율적인 업무를</h2>
-        <p>혁신적인 솔루션으로 당신의 비즈니스를 성장시키세요.</p>
-        <!-- 메인 배너 문구 및 추가 정보 -->
-      </div>
+    <section id="hero-banner" class="fade-in-scroll">
+        <div class="banner-content">
+            <h1>BTBT 자동화 솔루션으로 <br>더 효율적인 업무를</h1>
+            <p>귀사의 비즈니스 성공을 위한 최적의 자동화 솔루션을 제공합니다.</p>
+        </div>
     </section>
 
-    <section id="about">
-      <div class="content-container">
-        <h3>회사소개</h3>
-        <p>BTBT는 다양한 산업 분야에 자동화 솔루션을 제공하는 혁신적인 기업입니다. 저희는 최첨단 기술과 전문 지식을 바탕으로 고객의 비즈니스 효율성을 극대화하는 맞춤형 솔루션을 제공합니다.</p>
-        <!-- 회사 소개 내용 -->
-        <div class="image-placeholder">
-          <!-- 회사 소개 이미지 -->
+    <section id="introduction" class="fade-in-scroll">
+        <div class="container">
+            <h2>BTBT는 무엇을 하나요?</h2>
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h3>혁신적인 자동화 솔루션</h3>
+                    <p>BTBT는 다양한 산업 분야에 걸쳐 자동화 솔루션을 제공하는 선도 기업입니다. 저희는 고객의 요구에 맞춘 최첨단 기술과 전문 지식을 통해 비즈니스 프로세스를 혁신하고 효율성을 극대화합니다.</p>
+                    <p>우리의 목표는 고객이 핵심 업무에 집중하고, 운영 비용을 절감하며, 더 나은 의사 결정을 내릴 수 있도록 지원하는 것입니다.</p>
+                </div>
+                <div class="intro-image">
+                    <img src="./public/images/intro-image.png" alt="BTBT 소개 이미지">
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="solutions">
-      <div class="content-container">
-        <h3>솔루션</h3>
-        <p>BTBT는 고객의 요구에 맞춘 다양한 솔루션을 제공합니다. 생산 자동화, 업무 프로세스 자동화, AI 기반 솔루션 등 다양한 분야에서 혁신적인 솔루션을 경험해보세요.</p>
-         <!-- 솔루션 소개 내용 -->
-        <div class="solutions-grid">
-          <!-- 솔루션 카드들이 여기에 추가될 예정입니다 -->
+    <section id="solutions" class="fade-in-scroll">
+        <div class="container">
+            <h2>BTBT 솔루션</h2>
+            <div class="solutions-grid">
+                {/* 솔루션 카드들이 여기에 동적으로 생성됩니다 */}
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="news">
-      <div class="content-container">
-        <h3>소식</h3>
-        <p>BTBT의 최신 뉴스와 업데이트를 만나보세요. 새로운 솔루션 출시, 업계 동향, 그리고 BTBT의 성장 소식을 빠르게 전달해드립니다.</p>
-        <!-- 소식 섹션 내용 -->
-        <div class="news-feed">
-          <!-- RSS 피드 내용이 여기에 추가될 예정입니다 -->
+    <section id="news" class="fade-in-scroll">
+        <div class="container">
+            <h2>소식</h2>
+            <div class="news-feed">
+                {/* RSS 피드 내용이 여기에 동적으로 표시됩니다 */}
+            </div>
         </div>
-        <div class="image-placeholder">
-          <!-- 최신 뉴스 이미지 -->
-        </div>
-      </div>
     </section>
 
-    <section id="contact">
-      <div class="content-container">
-        <h3>문의하기</h3>
-        <p>BTBT에 대해 더 궁금하신 점이 있으신가요? 언제든지 문의해주세요. 저희 전문가 팀이 친절하게 상담해드립니다.</p>
-        <!-- 문의하기 내용 -->
-        <div class="image-placeholder">
-          <!-- 문의하기 이미지 -->
+    <section id="contact" class="fade-in-scroll">
+        <div class="container">
+            <h2>문의하기</h2>
+            <p>문의사항이 있으시면 언제든지 연락주세요.</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">메시지</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">문의하기</button>
+            </form>
         </div>
-      </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2023 BTBT. All rights reserved.</p>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BTBT. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <script src="./script.js"></script>
+    <script type="module" src="./public/js/main.js"></script>
 </body>
 </html>
